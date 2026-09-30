@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GadgetRush Admin</title>
+
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+
+</head>
+
+<body>
+
+    <header class="admin-header">
+
+        <h1>
+            GadgetRush Admin
+        </h1>
+
+        <div class="admin-auth-controls">
+            <label for="adminApprovalKey">Admin approval key</label>
+            <input id="adminApprovalKey" type="password" autocomplete="current-password" placeholder="Set in backend/.env">
+            <button id="loadOrdersBtn" type="button">Load orders</button>
+        </div>
+
+        <button id="logoutAdmin">
+            Logout
+        </button>
+
+    </header>
+
+
+    <main class="admin-container">
+
+        <h2>
+            Dashboard
+        </h2>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <h3>
+                    Total Sales
+                </h3>
+
+                <p id="totalSales">
+                    $0.00
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>
+                    Orders
+                </h3>
+
+                <p id="totalOrders">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>
+                    Customers
+                </h3>
+
+                <p id="totalCustomers">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>
+                    Products
+                </h3>
+
+                <p id="totalProducts">
+                    0
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="products-section">
+
+            <div class="products-heading">
+                <h2>Product Management</h2>
+                <p id="productsStatus" role="status">Loading products...</p>
+            </div>
+
+            <form id="addProductForm" class="add-product-form">
+                <h3>Add Product</h3>
+                <label>
+                    Product name
+                    <input name="name" type="text" maxlength="80" required>
+                </label>
+                <label>
+                    Brand
+                    <input name="brand" type="text" maxlength="50" required>
+                </label>
+                <label>
+                    Price ($)
+                    <input name="price" type="number" min="0" step="0.01" required>
+                </label>
+                <label>
+                    Discount (%)
+                    <input name="discount" type="number" min="0" max="100" step="1" value="0" required>
+                </label>
+                <label>
+                    Stock
+                    <input name="stock" type="number" min="0" step="1" value="0" required>
+                </label>
+                <label class="product-image-field">
+                    Image URL
+                    <input name="image" type="url" placeholder="https://example.com/product.jpg" required>
+                </label>
+                <button class="product-action product-save" type="submit">Add Product</button>
+            </form>
+
+            <div class="products-table-wrap">
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Product (ID + name)</th>
+                            <th>Price</th>
+                            <th>Discount</th>
+                            <th>Stock</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsList">
+                        <tr>
+                            <td colspan="5">Loading products...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+
+        <section class="orders-section">
+
+    <h2>
+        Order Management
+    </h2>
+
+    <p id="ordersStatus" role="status">Enter the backend admin key to load orders.</p>
+
+    <div
+        id="ordersList"
+        class="admin-orders-list"
+    >
+
+        <p>
+            No orders yet.
+        </p>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

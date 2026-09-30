@@ -1,0 +1,1082 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 18 Pro Max",
+        "brand": "Apple",
+        "price": 2499,
+        "discount": 80,
+        "stock": 132,
+        "image": "https://i.pinimg.com/736x/72/31/c6/7231c63b5ea9e115c3d52d849c7a0078.jpg"
+    },
+    {
+        "id": 2,
+        "name": "iPhone 17 Pro Max",
+        "brand": "Apple",
+        "price": 1799,
+        "discount": 70,
+        "stock": 60,
+        "image": "https://i.pinimg.com/736x/8e/f8/be/8ef8bee4bb6f355520f78899ab23cc83.jpg"
+    },
+    {
+        "id": 3,
+        "name": "iPhone 17 Pro",
+        "brand": "Apple",
+        "price": 1599,
+        "discount": 70,
+        "stock": 53,
+        "image": "https://i.pinimg.com/736x/ed/d1/87/edd187300402c6662c2728b10c1138fa.jpg"
+    },
+    {
+        "id": 4,
+        "name": "iPhone 17",
+        "brand": "Apple",
+        "price": 999,
+        "discount": 70,
+        "stock": 143,
+        "image": "https://i.pinimg.com/1200x/72/cf/f5/72cff5f64d1ef3c215164e581a76d21e.jpg"
+    },
+    {
+        "id": 5,
+        "name": "iPhone 16 Pro Max",
+        "brand": "Apple",
+        "price": 1499,
+        "discount": 70,
+        "stock": 122,
+        "image": "https://i.pinimg.com/736x/fa/5e/99/fa5e998c8c2e69293cf580b6c33fc51f.jpg"
+    },
+    {
+        "id": 6,
+        "name": "iPhone 16 Pro",
+        "brand": "Apple",
+        "price": 1299,
+        "discount": 70,
+        "stock": 98,
+        "image": "https://i.pinimg.com/736x/ee/1b/af/ee1baf7f95f5db6823079ee8d17b3e47.jpg"
+    },
+    {
+        "id": 7,
+        "name": "iPhone 16 Plus",
+        "brand": "Apple",
+        "price": 1099,
+        "discount": 70,
+        "stock": 122,
+        "image": "https://i.pinimg.com/736x/2d/2d/43/2d2d4392696abfdf85a48d902cd7bee5.jpg"
+    },
+    {
+        "id": 8,
+        "name": "iPhone 16",
+        "brand": "Apple",
+        "price": 949,
+        "discount": 70,
+        "stock": 87,
+        "image": "https://i.pinimg.com/736x/9e/7c/ca/9e7ccaae7945dc89a84ebfdc74abcd7c.jpg"
+    },
+    {
+        "id": 9,
+        "name": "iPhone 15 Pro Max",
+        "brand": "Apple",
+        "price": 1199,
+        "discount": 70,
+        "stock": 156,
+        "image": "https://i.pinimg.com/736x/2f/2b/7f/2f2b7f7cf1d7c24484daa89f20167629.jpg"
+    },
+    {
+        "id": 10,
+        "name": "iPhone 15 Pro",
+        "brand": "Apple",
+        "price": 999,
+        "discount": 70,
+        "stock": 39,
+        "image": "https://i.pinimg.com/736x/0e/cd/b7/0ecdb748b034492c5d7e1e6e2727d1aa.jpg"
+    },
+    {
+        "id": 11,
+        "name": "iPhone 15",
+        "brand": "Apple",
+        "price": 799,
+        "discount": 70,
+        "stock": 167,
+        "image": "https://i.pinimg.com/1200x/2c/72/b1/2c72b1c676062281b5b013da3f6f58f0.jpg"
+    },
+    {
+        "id": 12,
+        "name": "iPhone 14 Pro Max",
+        "brand": "Apple",
+        "price": 1099,
+        "discount": 70,
+        "stock": 87,
+        "image": "https://i.pinimg.com/736x/26/be/56/26be56634ad9773c9d8f6315cac2cba7.jpg"
+    },
+    {
+        "id": 13,
+        "name": "iPhone 14 Pro",
+        "brand": "Apple",
+        "price": 999,
+        "discount": 70,
+        "stock": 197,
+        "image": "https://i.pinimg.com/1200x/bc/27/69/bc276910fe69462e927f242b4f7d6a84.jpg"
+    },
+    {
+        "id": 14,
+        "name": "iPhone 14",
+        "brand": "Apple",
+        "price": 699,
+        "discount": 70,
+        "stock": 152,
+        "image": "https://i.pinimg.com/736x/27/74/90/277490e1ca0b10971f355cf890812877.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Galaxy S26 Ultra",
+        "brand": "Samsung",
+        "price": 1399,
+        "discount": 70,
+        "stock": 178,
+        "image": "https://i.pinimg.com/736x/97/14/fb/9714fbfc0fe4761842a16bbf3622f88c.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Galaxy S26+",
+        "brand": "Samsung",
+        "price": 1199,
+        "discount": 70,
+        "stock": 222,
+        "image": "https://i.pinimg.com/736x/db/f5/b6/dbf5b6367b5bee7812ee46b33f6c010b.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Galaxy S26",
+        "brand": "Samsung",
+        "price": 999,
+        "discount": 70,
+        "stock": 167,
+        "image": "https://i.pinimg.com/736x/fa/56/94/fa56946a7cfa007d073eda22e861b9e8.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Galaxy S25 Ultra",
+        "brand": "Samsung",
+        "price": 1299,
+        "discount": 70,
+        "stock": 77,
+        "image": "https://i.pinimg.com/736x/d8/e6/9f/d8e69f9b36b7a2cf0a3add6d0d83498a.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Galaxy S25+",
+        "brand": "Samsung",
+        "price": 1099,
+        "discount": 70,
+        "stock": 187,
+        "image": "https://i.pinimg.com/1200x/9a/73/c0/9a73c0258167027ab477a4affd5e7e3d.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Galaxy S25",
+        "brand": "Samsung",
+        "price": 899,
+        "discount": 70,
+        "stock": 114,
+        "image": "https://i.pinimg.com/736x/6b/97/c8/6b97c834ffb4c7c83bed188281300bc9.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Galaxy S24 Ultra",
+        "brand": "Samsung",
+        "price": 1199,
+        "discount": 70,
+        "stock": 220,
+        "image": "https://i.pinimg.com/1200x/44/db/f3/44dbf3252affe1b050eef4b7ea01c988.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Galaxy S24+",
+        "brand": "Samsung",
+        "price": 999,
+        "discount": 70,
+        "stock": 226,
+        "image": "https://i.pinimg.com/736x/68/7e/a2/687ea2a1169c2a4410843fda1abc1e06.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Galaxy S24",
+        "brand": "Samsung",
+        "price": 799,
+        "discount": 70,
+        "stock": 176,
+        "image": "https://i.pinimg.com/736x/56/3f/18/563f18dd6d2d9e377bf6aded1223b78e.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Galaxy Z Fold 7",
+        "brand": "Samsung",
+        "price": 1899,
+        "discount": 70,
+        "stock": 43,
+        "image": "https://i.pinimg.com/736x/8c/35/3e/8c353eb43e1108eadb18a25513defc73.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Galaxy Z Fold 6",
+        "brand": "Samsung",
+        "price": 1799,
+        "discount": 70,
+        "stock": 178,
+        "image": "https://i.pinimg.com/1200x/95/6e/e9/956ee9e6e304976109a093b60c0c857b.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Galaxy Z Flip 7",
+        "brand": "Samsung",
+        "price": 1099,
+        "discount": 70,
+        "stock": 106,
+        "image": "https://i.pinimg.com/736x/00/c7/77/00c777bdc47a27f72ae04b3560e38c7e.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Galaxy Z Flip 6",
+        "brand": "Samsung",
+        "price": 999,
+        "discount": 70,
+        "stock": 196,
+        "image": "https://i.pinimg.com/1200x/ff/7b/28/ff7b282a66afd057d324fdd1c3e29160.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Pixel 10 Pro XL",
+        "brand": "Google",
+        "price": 1199,
+        "discount": 70,
+        "stock": 167,
+        "image": "https://i.pinimg.com/736x/79/1d/35/791d3582b13a9e1d9b3d38e9fd80998b.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Pixel 10 Pro",
+        "brand": "Google",
+        "price": 999,
+        "discount": 70,
+        "stock": 54,
+        "image": "https://i.pinimg.com/1200x/06/00/88/060088eccccc46d2331d6a8bcc7b0f43.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Pixel 10",
+        "brand": "Google",
+        "price": 799,
+        "discount": 70,
+        "stock": 198,
+        "image": "https://i.pinimg.com/1200x/01/b1/2d/01b12dd073d3f7cc928402b8aab16ae7.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Pixel 9 Pro XL",
+        "brand": "Google",
+        "price": 1099,
+        "discount": 70,
+        "stock": 167,
+        "image": "https://i.pinimg.com/736x/3d/62/fd/3d62fd7bbe60fd910186e416f51bd12f.jpg"
+    },
+    {
+        "id": 32,
+        "name": "Pixel 9 Pro",
+        "brand": "Google",
+        "price": 999,
+        "discount": 70,
+        "stock": 145,
+        "image": "https://i.pinimg.com/1200x/18/33/f0/1833f0ce99300ef42b0f4d8ed9664ce8.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Pixel 9",
+        "brand": "Google",
+        "price": 799,
+        "discount": 70,
+        "stock": 87,
+        "image": "https://i.pinimg.com/736x/1d/27/9d/1d279dfef5070f0f6b2b03bd6e1da1ab.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Pixel 9a",
+        "brand": "Google",
+        "price": 499,
+        "discount": 70,
+        "stock": 279,
+        "image": "https://i.pinimg.com/1200x/87/aa/01/87aa01ef0705d5b8ab9d0c9f9f440916.jpg"
+    },
+    {
+        "id": 35,
+        "name": "Xiaomi 17 Ultra",
+        "brand": "Xiaomi",
+        "price": 999,
+        "discount": 70,
+        "stock": 114,
+        "image": "https://i.pinimg.com/736x/2e/d5/bc/2ed5bc20950255ccca36446affe8882f.jpg"
+    },
+    {
+        "id": 36,
+        "name": "Xiaomi 17 Pro",
+        "brand": "Xiaomi",
+        "price": 899,
+        "discount": 70,
+        "stock": 223,
+        "image": "https://i.pinimg.com/736x/4c/dd/13/4cdd13c72776f99eb30b942bf8495aac.jpg"
+    },
+    {
+        "id": 37,
+        "name": "Xiaomi 17",
+        "brand": "Xiaomi",
+        "price": 799,
+        "discount": 70,
+        "stock": 110,
+        "image": "https://i.pinimg.com/736x/83/60/fc/8360fc9cdf71ca08cfa2d48122f3a9e3.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Xiaomi 15 Ultra",
+        "brand": "Xiaomi",
+        "price": 999,
+        "discount": 70,
+        "stock": 178,
+        "image": "https://i.pinimg.com/1200x/76/a2/b4/76a2b4342f360c2bdb71c1a9e50255cb.jpg"
+    },
+    {
+        "id": 39,
+        "name": "Xiaomi 15 Pro",
+        "brand": "Xiaomi",
+        "price": 899,
+        "discount": 70,
+        "stock": 166,
+        "image": "https://i.pinimg.com/1200x/c7/a0/9d/c7a09d29e287f402fe64857db8a5f950.jpg"
+    },
+    {
+        "id": 40,
+        "name": "Xiaomi 15",
+        "brand": "Xiaomi",
+        "price": 699,
+        "discount": 70,
+        "stock": 152,
+        "image": "https://i.pinimg.com/1200x/e0/3e/21/e03e2176ea4072e594e20759bf9d1381.jpg"
+    },
+    {
+        "id": 41,
+        "name": "Redmi Note 15 Pro+",
+        "brand": "Xiaomi",
+        "price": 599,
+        "discount": 70,
+        "stock": 143,
+        "image": "https://i.pinimg.com/1200x/7e/0c/b1/7e0cb1f9db0dfced2ccefddfa3835d13.jpg"
+    },
+    {
+        "id": 42,
+        "name": "Redmi Note 15 Pro",
+        "brand": "Xiaomi",
+        "price": 499,
+        "discount": 70,
+        "stock": 57,
+        "image": "https://i.pinimg.com/736x/59/4a/1d/594a1d10d0b193714a22a8f63ef165f0.jpg"
+    },
+    {
+        "id": 43,
+        "name": "OnePlus 14 Pro",
+        "brand": "OnePlus",
+        "price": 899,
+        "discount": 70,
+        "stock": 89,
+        "image": "YOUR_IMAGE_HERE"
+    },
+    {
+        "id": 44,
+        "name": "OnePlus 14",
+        "brand": "OnePlus",
+        "price": 699,
+        "discount": 70,
+        "stock": 123,
+        "image": "https://i.pinimg.com/736x/3c/2c/b0/3c2cb0edab652ca5b0550102b64ef9f5.jpg"
+    },
+    {
+        "id": 45,
+        "name": "OnePlus 13",
+        "brand": "OnePlus",
+        "price": 699,
+        "discount": 70,
+        "stock": 103,
+        "image": "https://i.pinimg.com/736x/cf/7c/3a/cf7c3a0aed4522be8f83d94898c011d4.jpg"
+    },
+    {
+        "id": 46,
+        "name": "OnePlus 13R",
+        "brand": "OnePlus",
+        "price": 599,
+        "discount": 70,
+        "stock": 198,
+        "image": "https://i.pinimg.com/736x/1d/cf/19/1dcf197ca11d26e07c64d759dcb9d614.jpg"
+    },
+    {
+        "id": 47,
+        "name": "OnePlus 12",
+        "brand": "OnePlus",
+        "price": 599,
+        "discount": 70,
+        "stock": 100,
+        "image": "https://i.pinimg.com/736x/b8/de/66/b8de66070ceb6e9f1ee7da31977de66f.jpg"
+    },
+    {
+        "id": 48,
+        "name": "OnePlus Open",
+        "brand": "OnePlus",
+        "price": 1699,
+        "discount": 70,
+        "stock": 138,
+        "image": "https://i.pinimg.com/1200x/c0/c9/d1/c0c9d133c542e5b684f517705a06ca4d.jpg"
+    },
+    {
+        "id": 49,
+        "name": "Xperia 1 VII",
+        "brand": "Sony",
+        "price": 1199,
+        "discount": 70,
+        "stock": 57,
+        "image": "https://i.pinimg.com/1200x/97/a6/60/97a6600b8684198ba1ae8b3e6a56a7da.jpg"
+    },
+    {
+        "id": 50,
+        "name": "Xperia 1 VI",
+        "brand": "Sony",
+        "price": 1099,
+        "discount": 70,
+        "stock": 38,
+        "image": "https://i.pinimg.com/736x/d0/c6/d7/d0c6d75a28520f627fae7e5db3e96b63.jpg"
+    },
+    {
+        "id": 51,
+        "name": "Xperia 5 V",
+        "brand": "Sony",
+        "price": 899,
+        "discount": 70,
+        "stock": 109,
+        "image": "https://i.pinimg.com/1200x/07/d3/a4/07d3a453d89635cd3d9b9e28e72eeb46.jpg"
+    },
+    {
+        "id": 52,
+        "name": "Xperia 10 VII",
+        "brand": "Sony",
+        "price": 599,
+        "discount": 70,
+        "stock": 111,
+        "image": "https://i.pinimg.com/1200x/dc/2d/e7/dc2de721e9332b3b3fab710d0e718368.jpg"
+    },
+    {
+        "id": 53,
+        "name": "Xperia 10 VI",
+        "brand": "Sony",
+        "price": 499,
+        "discount": 70,
+        "stock": 134,
+        "image": "https://i.pinimg.com/1200x/e4/a6/0c/e4a60c3e9f74f74d50bd7db2de496fa3.jpg"
+    },
+    {
+        "id": 54,
+        "name": "Motorola Edge 60 Pro",
+        "brand": "Motorola",
+        "price": 699,
+        "discount": 70,
+        "stock": 73,
+        "image": "https://i.pinimg.com/1200x/2c/ad/ea/2cadeae3b4df59feff7779f2851a9126.jpg"
+    },
+    {
+        "id": 55,
+        "name": "Motorola Edge 60",
+        "brand": "Motorola",
+        "price": 599,
+        "discount": 70,
+        "stock": 50,
+        "image": "https://i.pinimg.com/736x/b8/65/5d/b8655de36db9aaf2d2d5d7915f66fdca.jpg"
+    },
+    {
+        "id": 56,
+        "name": "Motorola Razr 40 Ultra",
+        "brand": "Motorola",
+        "price": 1299,
+        "discount": 70,
+        "stock": 70,
+        "image": "https://i.pinimg.com/736x/1d/77/28/bc1qydgq3f7tnz0vwsxv9dnq690ham0cy9g0wgxvy3.jpg"
+    },
+    {
+        "id": 57,
+        "name": "Motorola Razr 60 Ultra",
+        "brand": "Motorola",
+        "price": 1199,
+        "discount": 70,
+        "stock": 22,
+        "image": "https://i.pinimg.com/736x/9e/26/ab/9e26abb3ab85e3a1bb05bd7016cc4f38.jpg"
+    },
+    {
+        "id": 58,
+        "name": "Motorola Moto G Power",
+        "brand": "Motorola",
+        "price": 399,
+        "discount": 70,
+        "stock": 58,
+        "image": "https://i.pinimg.com/736x/34/16/8e/34168e1de437e1570876356f2be0f8f7.jpg"
+    },
+    {
+        "id": 59,
+        "name": "OPPO Find X8 Pro Mediatek Dimensity 9400 16GB RAM 512GB Storage 6.7 5G ColorOS Smartphone",
+        "brand": "Oppo",
+        "price": 1099,
+        "discount": 70,
+        "stock": 16,
+        "image": "https://i.pinimg.com/1200x/0b/fe/fd/0bfefd9d6bbff57d0d57f9ba7654a2fe.jpg"
+    },
+    {
+        "id": 60,
+        "name": "Oppo Find X8",
+        "brand": "Oppo",
+        "price": 899,
+        "discount": 70,
+        "stock": 32,
+        "image": "https://i.pinimg.com/736x/95/81/10/958110aa10c5d5cad09ea42cee479f80.jpg"
+    },
+    {
+        "id": 61,
+        "name": "Oppo Find N5 16GB 512GB Cosmic Black (International Model) - Brand New",
+        "brand": "Oppo",
+        "price": 1599,
+        "discount": 70,
+        "stock": 72,
+        "image": "https://i.pinimg.com/1200x/72/04/42/7204429419c4a4e95444afcb2135c342.jpg"
+    },
+    {
+        "id": 62,
+        "name": "Oppo Reno 14 Pro",
+        "brand": "Oppo",
+        "price": 699,
+        "discount": 70,
+        "stock": 36,
+        "image": "https://i.pinimg.com/736x/94/09/ca/9409ca3b83a6fb8f9b320a5077a78965.jpg"
+    },
+    {
+        "id": 63,
+        "name": "Oppo Reno 14",
+        "brand": "Oppo",
+        "price": 599,
+        "discount": 70,
+        "stock": 14,
+        "image": "https://i.pinimg.com/736x/bb/bb/a8/bbbba837249098ff73d59a1749fdd903.jpg"
+    },
+    {
+        "id": 64,
+        "name": "Vivo X200 Pro 512 GB, Titanium Grey, 6.78, Dual SIM, 5G",
+        "brand": "Vivo",
+        "price": 999,
+        "discount": 70,
+        "stock": 50,
+        "image": "https://i.pinimg.com/736x/67/9a/69/679a69f9cc00326b876f9b66fb4cac3a.jpg"
+    },
+    {
+        "id": 65,
+        "name": "Vivo X200",
+        "brand": "Vivo",
+        "price": 799,
+        "discount": 70,
+        "stock": 140,
+        "image": "https://i.pinimg.com/1200x/be/52/ca/be52ca36031dfe70524f68b76c22eb19.jpg"
+    },
+    {
+        "id": 66,
+        "name": "Vivo X100 Pro 5G",
+        "brand": "Vivo",
+        "price": 899,
+        "discount": 70,
+        "stock": 85,
+        "image": "https://i.pinimg.com/736x/e5/83/bb/e583bbde2d4667bba815a01abd608a60.jpg"
+    },
+    {
+        "id": 67,
+        "name": "Vivo V50 Pro",
+        "brand": "Vivo",
+        "price": 599,
+        "discount": 70,
+        "stock": 74,
+        "image": "https://tse1.mm.bing.net/th/id/OIP.kiSVJEXgBm6oi87_42BF0wHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+        "id": 68,
+        "name": "Vivo V50",
+        "brand": "Vivo",
+        "price": 499,
+        "discount": 70,
+        "stock": 20,
+        "image": "https://i.pinimg.com/1200x/8a/00/74/8a00743332cbea710b7e9dd0e12ea209.jpg"
+    },
+    {
+        "id": 69,
+        "name": "Huawei Pura 80 Ultra",
+        "brand": "Huawei",
+        "price": 1299,
+        "discount": 70,
+        "stock": 39,
+        "image": "https://i.pinimg.com/736x/90/f8/0d/90f80d8fa44968f90e9150f834c5eef4.jpg"
+    },
+    {
+        "id": 70,
+        "name": "Huawei Pura 80 Pro",
+        "brand": "Huawei",
+        "price": 999,
+        "discount": 70,
+        "stock": 74,
+        "image": "https://i.pinimg.com/1200x/21/8e/12/218e1227498b5280e4174d30dcafc8c1.jpg"
+    },
+    {
+        "id": 71,
+        "name": "Huawei Mate 70 Pro",
+        "brand": "Huawei",
+        "price": 1099,
+        "discount": 70,
+        "stock": 68,
+        "image": "https://i.pinimg.com/236x/f6/df/0d/f6df0d19e7965ccb0855511f0aee5ecf.jpg"
+    },
+    {
+        "id": 72,
+        "name": "Huawei Mate 70",
+        "brand": "Huawei",
+        "price": 899,
+        "discount": 70,
+        "stock": 18,
+        "image": "https://i.pinimg.com/736x/d8/ff/3b/d8ff3bb10e0d9283e2c00f04d51f963a.jpg"
+    },
+    {
+        "id": 73,
+        "name": "Huawei Nova 13 Pro",
+        "brand": "Huawei",
+        "price": 599,
+        "discount": 70,
+        "stock": 43,
+        "image": "https://i.pinimg.com/736x/54/99/ee/5499ee337e85c337b055c4d7431688c1.jpg"
+    },
+    {
+        "id": 74,
+        "name": "Nothing Phone 3",
+        "brand": "Nothing",
+        "price": 799,
+        "discount": 70,
+        "stock": 70,
+        "image": "https://i.pinimg.com/1200x/64/03/4c/64034c7fd6fd3abc9df2e4e0950e693e.jpg"
+    },
+    {
+        "id": 75,
+        "name": "Nothing Phone 3a Pro",
+        "brand": "Nothing",
+        "price": 499,
+        "discount": 70,
+        "stock": 14,
+        "image": "https://i.pinimg.com/736x/51/41/4c/51414c1a4cdf5d5797cde6133b04d20b.jpg"
+    },
+    {
+        "id": 76,
+        "name": "Nothing Phone 3a",
+        "brand": "Nothing",
+        "price": 399,
+        "discount": 70,
+        "stock": 19,
+        "image": "https://i.pinimg.com/736x/a8/50/01/a85001339c84729a410fc64e0013def1.jpg"
+    },
+    {
+        "id": 77,
+        "name": "Honor Magic7 Pro",
+        "brand": "Honor",
+        "price": 1099,
+        "discount": 70,
+        "stock": 30,
+        "image": "https://i.pinimg.com/1200x/b7/05/a1/b705a1bf9629225888b5344fd3fedd7d.jpg"
+    },
+    {
+        "id": 78,
+        "name": "Honor Magic7",
+        "brand": "Honor",
+        "price": 899,
+        "discount": 70,
+        "stock": 79,
+        "image": "https://i.pinimg.com/736x/77/bc/69/77bc69a0384d3f74a83b3c57a399eb2e.jpg"
+    },
+    {
+        "id": 79,
+        "name": "Honor Magic V3",
+        "brand": "Honor",
+        "price": 1699,
+        "discount": 70,
+        "stock": 9,
+        "image": "https://i.pinimg.com/736x/58/e1/03/58e10364efb16b70b533c0a44ca347e7.jpg"
+    },
+    {
+        "id": 80,
+        "name": "Honor 400 Pro",
+        "brand": "Honor",
+        "price": 599,
+        "discount": 70,
+        "stock": 37,
+        "image": "https://i.pinimg.com/1200x/b3/a6/7b/b3a67b090c1a20b488e7d4f877852838.jpg"
+    },
+    {
+        "id": 81,
+        "name": "Asus ROG Phone 9 Pro",
+        "brand": "Asus",
+        "price": 1199,
+        "discount": 70,
+        "stock": 69,
+        "image": "https://i.pinimg.com/736x/59/5f/b0/595fb0032ef95f3af91f334e4104ff17.jpg"
+    },
+    {
+        "id": 82,
+        "name": "Asus ROG Phone 9",
+        "brand": "Asus",
+        "price": 999,
+        "discount": 70,
+        "stock": 28,
+        "image": "https://i.pinimg.com/736x/7d/e6/60/7de66091d7361f57f1c3ffaa5040743f.jpg"
+    },
+    {
+        "id": 83,
+        "name": "Asus Zenfone 12 Ultra",
+        "brand": "Asus",
+        "price": 899,
+        "discount": 70,
+        "stock": 46,
+        "image": "https://i.pinimg.com/1200x/c7/f9/52/c7f9522901820b0bdc7955f5ecc60911.jpg"
+    },
+    {
+        "id": 84,
+        "name": "Realme GT 7 Pro",
+        "brand": "Realme",
+        "price": 799,
+        "discount": 70,
+        "stock": 14,
+        "image": "https://i.pinimg.com/736x/1a/c4/a2/1ac4a252e13cd239d0484b9ed969d3b1.jpg"
+    },
+    {
+        "id": 85,
+        "name": "Realme GT 7",
+        "brand": "Realme",
+        "price": 699,
+        "discount": 70,
+        "stock": 93,
+        "image": "https://i.pinimg.com/1200x/96/53/ee/9653ee553234ec68830d12b05b3a0687.jpg"
+    },
+    {
+        "id": 86,
+        "name": "Realme GT 6",
+        "brand": "Realme",
+        "price": 599,
+        "discount": 70,
+        "stock": 65,
+        "image": "https://i.pinimg.com/1200x/49/a0/28/49a028c4d7a0b427a73d353c63e6b140.jpg"
+    },
+    {
+        "id": 87,
+        "name": "ZTE Nubia Z70 Ultra",
+        "brand": "ZTE",
+        "price": 899,
+        "discount": 70,
+        "stock": 72,
+        "image": "https://i.pinimg.com/1200x/30/cf/75/30cf75d96ac31b06bfda24fcad44c6a2.jpg"
+    },
+    {
+        "id": 88,
+        "name": "ZTE Nubia Z60 Ultra",
+        "brand": "ZTE",
+        "price": 799,
+        "discount": 70,
+        "stock": 38,
+        "image": "https://i.pinimg.com/1200x/04/0c/37/040c378eb0f2d11bcd19622e9022a095.jpg"
+    },
+    {
+        "id": 89,
+        "name": "ZTE Nubia Flip 5G, Dual, 256GB 8GB RAM, Cosmic Black",
+        "brand": "ZTE",
+        "price": 699,
+        "discount": 70,
+        "stock": 61,
+        "image": "https://i.pinimg.com/1200x/84/a4/75/84a475e8a4671af1fac98042974bf4f9.jpg"
+    },
+    {
+        "id": 90,
+        "name": "TCL 60 Pro",
+        "brand": "TCL",
+        "price": 499,
+        "discount": 70,
+        "stock": 39,
+        "image": "YOUR_IMAGE_HERE"
+    },
+    {
+        "id": 91,
+        "name": "TCL 60",
+        "brand": "TCL",
+        "price": 399,
+        "discount": 70,
+        "stock": 20,
+        "image": "https://i.pinimg.com/1200x/0d/8c/fb/0d8cfbfc56183a6fcc3af6eebdd4413b.jpg"
+    },
+    {
+        "id": 92,
+        "name": "Nokia X50",
+        "brand": "Nokia",
+        "price": 499,
+        "discount": 70,
+        "stock": 59,
+        "image": "https://tse1.mm.bing.net/th/id/OIP.FQispcQsgdge5ZHDiWDIKAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+        "id": 93,
+        "name": "Nokia G50",
+        "brand": "Nokia",
+        "price": 399,
+        "discount": 70,
+        "stock": 43,
+        "image": "https://i.pinimg.com/1200x/41/a0/ae/41a0aed36072e34a6440cc772ab1810a.jpg"
+    },
+    {
+        "id": 94,
+        "name": "Surface Duo 3",
+        "brand": "Microsoft",
+        "price": 1399,
+        "discount": 70,
+        "stock": 60,
+        "image": "https://i.pinimg.com/736x/66/f3/c4/66f3c4dc8eee6599fd579223f0073d62.jpg"
+    },
+    {
+        "id": 95,
+        "name": "Fairphone 6",
+        "brand": "Fairphone",
+        "price": 699,
+        "discount": 70,
+        "stock": 83,
+        "image": "https://i.pinimg.com/1200x/93/fd/18/93fd18c9242b6e18a71175ce1ee8ece3.jpg"
+    },
+    {
+        "id": 96,
+        "name": "Fairphone 5",
+        "brand": "Fairphone",
+        "price": 599,
+        "discount": 70,
+        "stock": 23,
+        "image": "https://i.pinimg.com/1200x/a6/aa/dd/a6aadd1ead52ea2004de0ba7d3fdea75.jpg"
+    },
+    {
+        "id": 97,
+        "name": "Tecno Phantom V Fold2",
+        "brand": "Tecno",
+        "price": 1099,
+        "discount": 70,
+        "stock": 118,
+        "image": "https://i.pinimg.com/736x/e6/f0/f6/e6f0f6a074c6db8228b9734525868fb1.jpg"
+    },
+    {
+        "id": 98,
+        "name": "Tecno Phantom V Flip2",
+        "brand": "Tecno",
+        "price": 699,
+        "discount": 70,
+        "stock": 95,
+        "image": "https://i.pinimg.com/1200x/49/9a/e2/499ae21725aac0090589f3166d48dcff.jpg"
+    },
+    {
+        "id": 99,
+        "name": "Tecno Camon 40 Pro",
+        "brand": "Tecno",
+        "price": 339,
+        "discount": 70,
+        "stock": 79,
+        "image": "https://i.pinimg.com/736x/40/f1/dd/40f1dd5dbf5a68d766f6ec13f569f955.jpg"
+    },
+    {
+        "id": 100,
+        "name": "Infinix Note 50 Pro+",
+        "brand": "Infinix",
+        "price": 499,
+        "discount": 70,
+        "stock": 126,
+        "image": "https://i.pinimg.com/736x/3c/36/a3/3c36a3d8e2455ba209927c9d51336992.jpg"
+    },
+    {
+        "id": 101,
+        "name": "Infinix Note 50 Pro",
+        "brand": "Infinix",
+        "price": 399,
+        "discount": 70,
+        "stock": 153,
+        "image": "https://i.pinimg.com/736x/d0/06/0b/d0060b07d48009026a54082d3bb471de.jpg"
+    },
+    {
+        "id": 102,
+        "name": "Infinix GT 30 Pro",
+        "brand": "Infinix",
+        "price": 449,
+        "discount": 70,
+        "stock": 146,
+        "image": "https://i.pinimg.com/736x/8a/d1/c6/8ad1c62689afec41387c012a76386417.jpg"
+    },
+    {
+        "id": 103,
+        "name": "Lava Agni 3",
+        "brand": "Lava",
+        "price": 399,
+        "discount": 70,
+        "stock": 29,
+        "image": "https://i.pinimg.com/1200x/ec/6d/40/ec6d40d7ace456603d0f2d842544c565.jpg"
+    },
+    {
+        "id": 104,
+        "name": "Sharp Aquos R10",
+        "brand": "Sharp",
+        "price": 699,
+        "discount": 70,
+        "stock": 156,
+        "image": "https://i.pinimg.com/736x/5c/86/76/5c86766a955661cd14cf2fa4a343cd2d.jpg"
+    },
+    {
+        "id": 105,
+        "name": "Sharp Aquos Sense9",
+        "brand": "Sharp",
+        "price": 499,
+        "discount": 70,
+        "stock": 60,
+        "image": "https://i.pinimg.com/736x/a6/b9/aa/a6b9aa7651660b188484b25ecfedcca8.jpg"
+    },
+    {
+        "id": 106,
+        "name": "Leitz Phone 3",
+        "brand": "Leica",
+        "price": 1699,
+        "discount": 70,
+        "stock": 38,
+        "image": "https://i.pinimg.com/236x/50/28/db/5028db4fe706cef9a16c65ba0c5f67d4.jpg"
+    },
+    {
+        "id": 107,
+        "name": "RedMagic 10 Pro",
+        "brand": "RedMagic",
+        "price": 899,
+        "discount": 70,
+        "stock": 92,
+        "image": "https://i.pinimg.com/1200x/31/d9/1d/31d91d3874eb08fd50b1709cec77189d.jpg"
+    },
+    {
+        "id": 108,
+        "name": "RedMagic 10S Pro",
+        "brand": "RedMagic",
+        "price": 999,
+        "discount": 70,
+        "stock": 32,
+        "image": "https://i.pinimg.com/736x/00/e2/ee/00e2ee2bd3411df8844c55ace69cd276.jpg"
+    },
+    {
+        "id": 109,
+        "name": "Poco F7 Pro",
+        "brand": "Poco",
+        "price": 599,
+        "discount": 70,
+        "stock": 73,
+        "image": "https://i.pinimg.com/1200x/b1/0c/d1/b10cd1ceb8de2d004e1f6ea7f69f8efd.jpg"
+    },
+    {
+        "id": 110,
+        "name": "Poco F7 Ultra",
+        "brand": "Poco",
+        "price": 699,
+        "discount": 70,
+        "stock": 62,
+        "image": "https://i.pinimg.com/736x/59/85/0f/59850f8a00e1a63a99f461bade7c4434.jpg"
+    },
+    {
+        "id": 111,
+        "name": "iQOO 13",
+        "brand": "iQOO",
+        "price": 699,
+        "discount": 70,
+        "stock": 116,
+        "image": "https://i.pinimg.com/736x/c1/5e/36/c15e36f7e3a805d853dae4521f1c3951.jpg"
+    },
+    {
+        "id": 112,
+        "name": "iQOO Neo 10 Pro",
+        "brand": "iQOO",
+        "price": 599,
+        "discount": 70,
+        "stock": 83,
+        "image": "https://tse1.mm.bing.net/th/id/OIP.GwoSXDc2NwdQJC05PJXN1QHaIk?r=0&w=1106&h=1280&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+        "id": 113,
+        "name": "Meizu 22",
+        "brand": "Meizu",
+        "price": 599,
+        "discount": 70,
+        "stock": 43,
+        "image": "https://i.pinimg.com/1200x/83/8e/09/838e09fe56e75ba0bf74b02ae23a7fa9.jpg"
+    },
+    {
+        "id": 114,
+        "name": "HTC U24 Pro",
+        "brand": "HTC",
+        "price": 332,
+        "discount": 70,
+        "stock": 72,
+        "image": "https://i.pinimg.com/736x/7e/3d/1a/7e3d1a198b411803280e1dc8c02fb2f6.jpg"
+    },
+    {
+        "id": 115,
+        "name": "Xperia 1 V",
+        "brand": "Sony",
+        "price": 999,
+        "discount": 70,
+        "stock": 35,
+        "image": "https://i.pinimg.com/1200x/1a/69/a5/bc1qydgq3f7tnz0vwsxv9dnq690ham0cy9g0wgxvy3.jpg"
+    },
+    {
+        "id": 116,
+        "name": "Galaxy A56",
+        "brand": "Samsung",
+        "price": 369,
+        "discount": 70,
+        "stock": 146,
+        "image": "https://i.pinimg.com/736x/2e/52/5b/2e525bb7e65a18c1f80a150df93c5a64.jpg"
+    },
+    {
+        "id": 117,
+        "name": "Galaxy A36",
+        "brand": "Samsung",
+        "price": 346,
+        "discount": 70,
+        "stock": 148,
+        "image": "https://i.pinimg.com/1200x/cd/fc/b7/cdfcb705b5f56d6da8944cb18ca79a7c.jpg"
+    },
+    {
+        "id": 118,
+        "name": "iPhone 13 Pro Max",
+        "brand": "Apple",
+        "price": 556,
+        "discount": 70,
+        "stock": 153,
+        "image": "https://i.pinimg.com/1200x/48/50/67/485067d9570ba3f9a3cfd9c80dd38924.jpg"
+    },
+    {
+        "id": 119,
+        "name": "iPhone 13 Pro",
+        "brand": "Apple",
+        "price": 482,
+        "discount": 70,
+        "stock": 122,
+        "image": "https://i.pinimg.com/736x/76/96/d7/7696d733a96c7b2cfe1b2128a0b1bb75.jpg"
+    },
+    {
+        "id": 120,
+        "name": "iPhone 13",
+        "brand": "Apple",
+        "price": 369,
+        "discount": 70,
+        "stock": 152,
+        "image": "https://i.pinimg.com/736x/6b/36/c1/6b36c1dbf64607491d0d24c5aa3349ad.jpg"
+    }
+]

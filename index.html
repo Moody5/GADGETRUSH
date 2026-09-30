@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GadgetRush - Smartphone Deals</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NOTIFICATION ================= -->
+
+
+
+<div id="siteNotification" class="site-notification">
+
+    <span id="notificationIcon">
+        ✓
+    </span>
+
+    <span id="notificationMessage">
+        Success
+    </span>
+
+</div>
+<!-- ================= spinner ================= -->
+
+<div id="pageLoadingOverlay">
+
+    <div>
+        <div class="loading-spinner"></div>
+
+        <h3>Loading GadgetRush</h3> <br>
+        <span>Powered by JUMIA <img src="https://i.pinimg.com/736x/a0/be/72/a0be721537be5e618ad1f4c25f251523.jpg" alt="JUMIA Logo" style="width: 16px; height: auto;"></span>
+<br>
+<br>
+        <p>Please wait...</p>
+    </div>
+
+</div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar" style=" main {padding-top: 80px;}">
+
+        <div class="logo">
+            Gadget<span>Rush</span>
+        </div>
+
+        <div class="nav-actions">
+
+            <select id="languageSelect">
+                   <option value="NGN">🇳🇬 NGN</option>
+                   <option value="USD">🇺🇸 USD</option>
+                   <option value="EUR">🇪🇺 EUR</option>
+             </select>
+
+            <button id="accountBtn">
+                    👤 Account
+            </button>
+
+            <button id="cartButton">
+                🛒 <span data-i18n="cart">Cart</span>
+                (<span id="cartCount">0</span>)
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= ACCOUNT POPUP ================= -->
+
+<div id="accountOverlay" class="popup-overlay">
+
+    <div class="account-box">
+
+        <button
+            class="close-popup"
+            id="closeAccount">
+            ×
+        </button>
+
+        <h2>Welcome to GadgetRush</h2>
+
+        <p>Login to your account</p>
+
+        <form id="loginForm">
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="loginEmail"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="loginPassword"
+                required
+            >
+
+            <button
+                type="submit"
+                class="login-button">
+                Login
+            </button>
+
+        </form>
+
+        <p class="register-text">
+            Don't have an account?
+            <button id="showRegister">
+                Create Account
+            </button>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ================= ACCOUNT MENU ================= -->
+
+<div id="accountMenu" class="account-menu">
+
+    <div class="account-menu-name" id="accountMenuName">
+        👤 Account
+    </div>
+
+    <button id="myAccountBtn">
+        👤 My Account
+    </button>
+
+    <button id="myOrdersBtn">
+        📦 My Orders
+    </button>
+
+    <button id="wishlistBtn">
+        ❤️ Wishlist
+    </button>
+
+    <button id="logoutBtn">
+        🚪 Logout
+    </button>
+
+</div>
+
+<!-- ================= MY ACCOUNT ================= -->
+
+<div id="myAccountOverlay" class="popup-overlay">
+
+    <div class="account-box">
+
+        <button
+            class="close-popup"
+            id="closeMyAccount">
+            ×
+        </button>
+
+
+        <h2>My Account</h2>
+
+        <div class="my-account-profile">
+
+            <div class="profile-icon">
+                👤
+            </div>
+
+            <h3 id="profileName">
+                Customer
+            </h3>
+
+            <p id="profileEmail">
+                customer@email.com
+            </p>
+
+        </div>
+
+        <div class="account-information">
+
+            <div class="account-info-row">
+
+                <strong>Account Status</strong>
+
+                <span>
+                    ✓ Active
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= MY ORDERS ================= -->
+
+<div id="myOrdersOverlay" class="popup-overlay">
+
+    <div class="account-box my-orders-box">
+
+        <button
+            class="close-popup"
+            id="closeMyOrders">
+            ×
+        </button>
+
+        <h2>My Orders</h2>
+
+        <p>
+            Your GadgetRush order history
+        </p>
+
+        <div id="ordersList">
+
+            <p class="no-orders">
+                You have no orders yet.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= WISHLIST ================= -->
+
+<div id="wishlistOverlay" class="popup-overlay">
+
+    <div class="account-box wishlist-box">
+
+        <button
+            class="close-popup"
+            id="closeWishlist">
+            ×
+        </button>
+
+        <h2>❤️ Wishlist</h2>
+
+        <p>
+            Your saved products
+        </p>
+
+        <div id="wishlistItems">
+
+            <p class="no-wishlist">
+                Your wishlist is empty.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= REGISTER POPUP ================= -->
+
+<div id="registerOverlay" class="popup-overlay">
+
+    <div class="account-box">
+
+        <button
+            class="close-popup"
+            id="closeRegister">
+            ×
+        </button>
+
+        <h2>Create Your Account</h2>
+
+        <p>Join GadgetRush today</p>
+
+        <form id="registerForm">
+
+            <label>Full Name</label>
+
+            <input
+                type="text"
+                id="registerName"
+                required
+            >
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="registerEmail"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="registerPassword"
+                required
+            >
+
+            <label>Confirm Password</label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                required
+            >
+
+            <button
+                type="submit"
+                class="login-button">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="register-text">
+
+            Already have an account?
+
+            <button id="backToLogin">
+                Login
+            </button>
+
+        </p>
+
+    </div>
+
+</div>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title" data-i18n="limited">
+                LIMITED TIME OFFER
+            </p>
+
+            <h1>
+                GadgetRush
+                <br>
+                <span>70% OFF</span>
+            </h1>
+
+            <p data-i18n="heroText">
+                Premium smartphones at incredible prices.
+                Grab your favorite device before it's gone.
+            </p>
+
+            <button
+                class="hero-button"
+                onclick="scrollToProducts()"
+                data-i18n="shopNow">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROMO ================= -->
+
+    <section class="promo">
+
+        <div>
+            🔥
+            <strong data-i18n="promoTitle">
+                HUGE SMARTPHONE SALE
+            </strong>
+        </div>
+
+        <div data-i18n="promoText">
+            Up to 70% OFF selected phones
+        </div>
+
+    </section>
+
+
+    <!-- ================= SPECIAL IPHONE ================= -->
+
+    <section class="special-offer">
+
+        <div class="special-image">
+            <img
+                src="https://i.pinimg.com/736x/72/31/c6/7231c63b5ea9e115c3d52d849c7a0078.jpg"
+                alt="iPhone 18 Pro Max">
+        </div>
+
+        <div class="special-content">
+
+            <span class="demo-label">
+                PROMO PRODUCT
+            </span>
+
+            <h2>
+                iPhone 18 Pro Max
+            </h2>
+
+            <p data-i18n="specialText">
+                Our featured promotional offer.
+            </p>
+
+            <div class="special-discount">
+                80% OFF
+            </div>
+
+            <button
+                onclick="addSpecialPhone()"
+                data-i18n="grabOffer">
+                Grab The Offer
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <main id="productsSection">
+
+        <div class="section-heading">
+
+            <h2 data-i18n="phones">
+                Smartphones
+            </h2>
+
+            <p data-i18n="choosePhone">
+                Choose from our large collection of smartphones.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search phones..."
+            >
+
+
+            <select id="brandFilter">
+                <option value="all">All Brands</option>
+            </select>
+
+
+            <select id="sortSelect">
+
+                <option value="default">
+                    Sort
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="discount">
+                    Biggest Discount
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- PRODUCT COUNT -->
+
+        <div class="product-count">
+
+            <span id="productCount">
+                0 phones
+            </span>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <div id="productsContainer" class="products-grid"></div>
+
+    </main>
+
+
+    <!-- ================= DELIVERY ACTIVITY ================= -->
+
+    <section class="delivery-section">
+
+        <h2 data-i18n="recentDelivery">
+            🚚 Recently Delivered
+        </h2>
+
+        <p class="demo-notice" data-i18n="demoDelivery">
+            Example delivery activity
+        </p>
+
+        <div id="deliveryTicker">
+
+            <div id="deliveryName">
+                Loading...
+            </div>
+
+            <div id="deliveryProduct">
+            </div>
+
+            <div id="deliveryLocation">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="logo">
+            Gadget<span>Rush</span>
+        </div>
+
+        <p>
+            © 2026 GadgetRush
+        </p>
+        <p> </p>
+        <P>Powered by JUMIA <img src="https://i.pinimg.com/736x/a0/be/72/a0be721537be5e618ad1f4c25f251523.jpg" alt="JUMIA Logo" style="width: 16px; height: auto;"></P>
+
+        <p data-i18n="footerText">
+            Smartphone deals made simple.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= POPUP ================= -->
+
+    <div id="offerPopup" class="popup-overlay">
+
+    <div class="popup">
+
+        <button
+            class="close-popup"
+            id="closePopup">
+            ×
+        </button>
+
+        <span
+            class="popup-label"
+            data-i18n="specialOffer">
+            🔥 SPECIAL OFFER
+        </span>
+
+        <h2>
+            iPhone 18 Pro Max
+        </h2>
+
+        <div class="popup-discount">
+            80% OFF
+        </div>
+
+        <p data-i18n="popupText">
+            Grab this exclusive promotional offer before it's gone!
+        </p>
+
+        <button
+            class="popup-button"
+            onclick="addSpecialPhone(); closeOfferPopup();"
+            data-i18n="grabOffer">
+            Grab The Offer
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= PRODUCT DETAILS ================= -->
+
+<div id="productDetailsOverlay" class="popup-overlay">
+
+    <div class="product-details-box">
+
+        <button
+            class="close-popup"
+            id="closeProductDetails">
+            ×
+        </button>
+
+        <div id="productDetailsContent"></div>
+
+    </div>
+
+</div>
+
+
+    <!-- ================= CART ================= -->
+
+    <div id="cartOverlay" class="popup-overlay">
+
+        <div class="cart-box">
+
+            <button
+                class="close-popup"
+                id="closeCart">
+                ×
+            </button>
+
+            <h2 data-i18n="yourCart">
+                Your Cart
+            </h2>
+
+            <div id="cartItems"></div>
+
+            <div class="cart-total">
+
+                <strong data-i18n="total">
+                    Total
+                </strong>
+
+               <div class="cart-summary">
+
+    <div>
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+    </div>
+
+    <div>
+        <span>Delivery</span>
+        <span id="cartDelivery">$10.00</span>
+    </div>
+
+    <div class="cart-grand-total">
+        <strong>Total</strong>
+        <strong id="cartTotal">$0.00</strong>
+    </div>
+
+</div>
+
+            </div>
+
+            <button
+                id="checkoutButton"
+                class="checkout-button"
+                data-i18n="checkout">
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CHECKOUT ================= -->
+
+    <div id="checkoutOverlay" class="popup-overlay">
+
+        <div class="checkout-box">
+
+            <button
+                class="close-popup"
+                id="closeCheckout">
+                ×
+            </button>
+
+            <h2 data-i18n="checkoutTitle">
+                Delivery & Verification
+            </h2>
+
+            <p data-i18n="checkoutText">
+                Please enter your details so we can process your order.
+            </p>
+
+
+            <form
+                id="checkoutForm"
+                onsubmit="return false;"
+            >
+
+                <input
+                    type="hidden"
+                    name="subject"
+                    id="emailSubject"
+                    value="New GadgetRush Order"
+                >
+
+                <input
+                    type="hidden"
+                    name="order_details"
+                    id="orderDetails"
+                >
+
+
+                <label data-i18n="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    name="full_name"
+                    id="fullName"
+                    required
+                >
+
+
+                <label data-i18n="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                >
+
+
+                <label data-i18n="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    required
+                >
+
+
+                <label data-i18n="country">
+                    Country
+                </label>
+
+                <input
+                    type="text"
+                    name="country"
+                    id="country"
+                    required
+                >
+
+
+                <label data-i18n="city">
+                    City
+                </label>
+
+                <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    required
+                >
+
+
+                <label data-i18n="address">
+                    Address
+                </label>
+
+                <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    required
+                >
+
+
+                <label data-i18n="postal">
+                    Postal Code
+                </label>
+
+                <input
+                    type="text"
+                    name="postal_code"
+                    id="postalCode"
+                    required
+                >
+
+
+                <label data-i18n="notes">
+                    Delivery Notes
+                </label>
+
+                <textarea
+                    name="notes"
+                    id="notes"
+                    rows="3">
+                </textarea>
+
+
+                <div id="checkoutSummary"></div>
+
+
+                <button
+                    id="placeOrderButton"
+                    type="button"
+                    class="place-order"
+                    data-i18n="placeOrder">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= SUCCESS ================= -->
+
+    <div id="successOverlay" class="popup-overlay">
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2 id="successTitle" data-i18n="orderSuccess">
+                Order Submitted!
+            </h2>
+
+            <p id="successMessage" data-i18n="successText">
+                Your order has been sent successfully.
+                We will contact you with the next step.
+            </p>
+
+            <button
+                onclick="closeSuccess()"
+                data-i18n="continueShopping">
+                Continue Shopping
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="bankTransferOverlay" class="popup-overlay">
+        <div class="bank-transfer-box">
+            <h2>Complete your bank transfer</h2>
+            <p>Order <strong id="transferOrderNumber"></strong></p>
+
+            <div class="bank-transfer-details">
+                <p><span>Bank</span><strong>Wema Bank PLC</strong></p>
+                <p><span>Account name</span><strong>TPAY/Promise Omanjie</strong></p>
+                <p><span>Account number</span><strong>9021298953</strong></p>
+                <p><span>Transfer amount</span><strong id="transferAmount"></strong></p>
+            </div>
+
+            <p class="transfer-deadline">Time remaining: <strong id="transferCountdown">15:00</strong></p>
+            <p id="transferStatus" role="status"></p>
+            <button id="paymentSentBtn" class="place-order" type="button">I have sent it</button>
+            <button id="closeBankTransfer" class="transfer-close" type="button">Close</button>
+        </div>
+    </div>
+
+
+<div id="orderLoadingOverlay" class="order-loading-overlay">
+
+    <div class="order-loading-box">
+
+        <div class="loading-spinner"></div>
+
+        <h3>Placing Your Order</h3>
+
+        <p>Creating your order...</p>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
