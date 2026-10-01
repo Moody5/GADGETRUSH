@@ -1967,8 +1967,11 @@ async function displayOrders() {
 
     try {
         let response = await fetch(
-            "http://localhost:3000/orders?email=" +
-            encodeURIComponent(currentUser.email),
+    (window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : window.location.origin) +
+    "/orders?email=" +
+    encodeURIComponent(currentUser.email),
             {
                 headers: {
                     "x-customer-order-key": getCustomerOrderAccessKey(currentUser.email)
@@ -2048,8 +2051,11 @@ async function checkApprovedOrders() {
 
     try {
         let response = await fetch(
-            "http://localhost:3000/orders?email=" +
-            encodeURIComponent(currentUser.email),
+    (window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : window.location.origin) +
+    "/orders?email=" +
+    encodeURIComponent(currentUser.email),
             {
                 headers: {
                     "x-customer-order-key": getCustomerOrderAccessKey(currentUser.email)
@@ -2467,7 +2473,12 @@ async function loadManagedProductValues() {
     });
 
     try {
-        let response = await fetch("http://localhost:3000/products");
+       let response = await fetch(
+    (window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : window.location.origin) +
+    "/products"
+);
         if (!response.ok) {
             return;
         }
@@ -4821,11 +4832,14 @@ async function markTransferAsSent() {
     button.disabled = true;
 
     try {
-        let response = await fetch(
-            "http://localhost:3000/orders/" +
-            encodeURIComponent(activeTransferOrder.orderNumber) +
-            "/payment-sent",
-            {
+       let response = await fetch(
+    (window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : window.location.origin) +
+    "/orders/" +
+    encodeURIComponent(activeTransferOrder.orderNumber) +
+    "/payment-sent",
+    {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -4895,7 +4909,12 @@ async function createBankTransferOrder(event) {
     };
 
     try {
-        let response = await fetch("http://localhost:3000/orders", {
+        let response = await fetch(
+    (window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : window.location.origin) +
+    "/orders",
+    {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload)
