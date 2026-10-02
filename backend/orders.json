@@ -1,0 +1,161 @@
+[
+    {
+        "orderNumber": "GR-1790818382228-5f4c",
+        "status": "Approved",
+        "paymentStatus": "Approved",
+        "paymentMethod": "Bank transfer",
+        "customer": {
+            "name": "dan",
+            "email": "flizzybrown500@gmail.com",
+            "phone": "0567575757"
+        },
+        "customerAccessKeyHash": "cf0e18fdb29040c4854501eca935facd7df4e1f60708bf46535ddc3b964604d3",
+        "delivery": {
+            "country": "Afghanistan",
+            "city": "OYIGBO-KOMKOM",
+            "address": "wsws",
+            "postalCode": "098990",
+            "notes": ""
+        },
+        "items": [
+            {
+                "id": 116,
+                "name": "Galaxy A56",
+                "image": "https://i.pinimg.com/736x/2e/52/5b/2e525bb7e65a18c1f80a150df93c5a64.jpg",
+                "quantity": 1,
+                "price": 110.70000000000002
+            }
+        ],
+        "subtotal": 110.7,
+        "deliveryFee": 10,
+        "total": 120.7,
+        "amountNgn": 181050,
+        "currency": "NGN",
+        "createdAt": "2026-10-01T01:33:02.228Z",
+        "expiresAt": "2026-10-01T01:48:02.228Z",
+        "paymentSubmittedAt": "2026-10-01T01:33:13.948Z",
+        "approvedAt": "2026-10-01T01:33:29.775Z",
+        "approvalEmailSentAt": "2026-10-01T01:33:33.220Z"
+    },
+    {
+        "orderNumber": "GR-1790817716826-63e6",
+        "status": "Approved",
+        "paymentStatus": "Approved",
+        "paymentMethod": "Bank transfer",
+        "customer": {
+            "name": "ieirhjfkj jhew",
+            "email": "flizzybrown500@gmail.com",
+            "phone": "0567575757"
+        },
+        "customerAccessKeyHash": "cf0e18fdb29040c4854501eca935facd7df4e1f60708bf46535ddc3b964604d3",
+        "delivery": {
+            "country": "Afghanistan",
+            "city": "OYIGBO-KOMKOM",
+            "address": "wsws",
+            "postalCode": "098990",
+            "notes": ""
+        },
+        "items": [
+            {
+                "id": 1,
+                "name": "iPhone 18 Pro Max",
+                "image": "https://i.pinimg.com/736x/72/31/c6/7231c63b5ea9e115c3d52d849c7a0078.jpg",
+                "quantity": 1,
+                "price": 499.7999999999999
+            }
+        ],
+        "subtotal": 499.8,
+        "deliveryFee": 10,
+        "total": 509.8,
+        "amountNgn": 764700,
+        "currency": "NGN",
+        "createdAt": "2026-10-01T01:21:56.826Z",
+        "expiresAt": "2026-10-01T01:36:56.826Z",
+        "paymentSubmittedAt": "2026-10-01T01:22:14.806Z",
+        "approvedAt": "2026-10-01T01:25:32.648Z",
+        "approvalEmailSentAt": "2026-10-01T01:25:35.326Z"
+    },
+    {
+        "orderNumber": "GR-1790753498833-3aee",
+        "status": "Approved",
+        "paymentStatus": "Approved",
+        "paymentMethod": "Bank transfer",
+        "customer": {
+            "name": "dan",
+            "email": "flizzybrown500@gmail.com",
+            "phone": "0567575757"
+        },
+        "customerAccessKeyHash": "6cfe6dbcc95e99da8432f496a94ac02d4eccb9afd230aa6024bfcaaeea0c9f6d",
+        "delivery": {
+            "country": "Afghanistan",
+            "city": "Port Harcourt",
+            "address": "wsws",
+            "postalCode": "098990",
+            "notes": ""
+        },
+        "items": [
+            {
+                "id": 114,
+                "name": "HTC U24 Pro",
+                "image": "https://i.pinimg.com/736x/7e/3d/1a/7e3d1a198b411803280e1dc8c02fb2f6.jpg",
+                "quantity": 1,
+                "price": 99.60000000000001
+            }
+        ],
+        "subtotal": 99.6,
+        "deliveryFee": 10,
+        "total": 109.6,
+        "amountNgn": 164400,
+        "currency": "NGN",
+        "createdAt": "2026-09-30T07:31:38.833Z",
+        "expiresAt": "2026-09-30T07:46:38.833Z",
+        "paymentSubmittedAt": "2026-09-30T07:31:48.214Z",
+        "approvedAt": "2026-09-30T07:32:02.934Z",
+        "approvalEmailSentAt": "2026-09-30T08:05:00.198Z"
+    },
+    {
+        "orderNumber": "GR-1790752706888-61f4",
+        "status": "Approved",
+        "paymentStatus": "Approved",
+        "paymentMethod": "Bank transfer",
+        "customer": {
+            "name": "dan",
+            "email": "flizzybrown500@gmail.com",
+            "phone": "0567575757"
+        },
+        "customerAccessKeyHash": "6cfe6dbcc95e99da8432f496a94ac02d4eccb9afd230aa6024bfcaaeea0c9f6d",
+        "delivery": {
+            "country": "Afghanistan",
+            "city": "OYIGBO-KOMKOM",
+            "address": "wsws",
+            "postalCode": "098990",
+            "notes": ""
+        },
+        "items": [
+            {
+                "id": 1,
+                "name": "iPhone 18 Pro Max",
+                "image": "https://i.pinimg.com/736x/72/31/c6/7231c63b5ea9e115c3d52d849c7a0078.jpg",
+                "quantity": 1,
+                "price": 499.7999999999999
+            },
+            {
+                "id": 114,
+                "name": "HTC U24 Pro",
+                "image": "https://i.pinimg.com/736x/7e/3d/1a/7e3d1a198b411803280e1dc8c02fb2f6.jpg",
+                "quantity": 1,
+                "price": 99.60000000000001
+            }
+        ],
+        "subtotal": 599.4,
+        "deliveryFee": 10,
+        "total": 609.4,
+        "amountNgn": 914100,
+        "currency": "NGN",
+        "createdAt": "2026-09-30T07:18:26.888Z",
+        "expiresAt": "2026-09-30T07:33:26.888Z",
+        "paymentSubmittedAt": "2026-09-30T07:18:30.851Z",
+        "approvedAt": "2026-09-30T07:18:50.870Z",
+        "approvalEmailSentAt": "2026-09-30T08:08:08.961Z"
+    }
+]
