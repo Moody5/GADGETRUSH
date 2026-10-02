@@ -4,6 +4,13 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 require("dotenv").config({ path: path.join(__dirname, ".env") });
+const { createClient } = require("@supabase/supabase-js");
+
+const supabase = createClient(
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_ROLE_KEY
+);
+
 const productsFile = process.env.PRODUCTS_FILE ||
     path.join(__dirname, "products.json");
 const ordersFile = process.env.ORDERS_FILE || path.join(__dirname, "orders.json");
@@ -17,12 +24,116 @@ app.use(cors());
 
 app.use(express.json());
 
-function readOrders() {
-    return JSON.parse(fs.readFileSync(ordersFile, "utf8"));
+async function readOrders() {
+
+    let { data, error } = await supabase
+        .from("orders")
+        .select("*")
+        .order("created_at", { ascending: false });
+
+    if (error) {
+        throw error;
+    }
+
+    return data.map(function(row) {
+
+        return {
+            orderNumber: row.order_number,
+            status: row.status,
+            paymentStatus: row.payment_status,
+            paymentMethod: row.payment_method,
+
+            customer: {
+                name: row.customer_name,
+                email: row.customer_email,
+                phone: row.customer_phone
+            },
+
+            customerAccessKeyHash:
+                row.customer_access_key_hash,
+
+            delivery: {
+                country: row.customer_country,
+                city: row.customer_city,
+                address: row.customer_address,
+                postalCode: row.customer_postal,
+                notes: row.customer_notes
+            },
+
+            items: row.items || [],
+
+            total: Number(row.total || 0),
+            amountNgn: Number(row.amount_ngn || 0),
+            deliveryFee: Number(row.delivery_fee || 0),
+
+            createdAt: row.created_at,
+            expiresAt: row.expires_at,
+
+            paymentSubmittedAt:
+                row.payment_submitted_at || null,
+
+            approvedAt:
+                row.approved_at || null,
+
+            approvalEmailSentAt:
+                row.approval_email_sent_at || null
+        };
+
+    });
 }
 
-function writeOrders(orders) {
-    fs.writeFileSync(ordersFile, JSON.stringify(orders, null, 4));
+
+async function writeOrders(orders) {
+
+    for (let order of orders) {
+
+        let { error } = await supabase
+            .from("orders")
+            .upsert({
+                order_number: order.orderNumber,
+
+                status: order.status,
+                payment_status: order.paymentStatus,
+                payment_method: order.paymentMethod,
+
+                customer_name: order.customer.name,
+                customer_email: order.customer.email,
+                customer_phone: order.customer.phone,
+
+                customer_country: order.delivery.country,
+                customer_city: order.delivery.city,
+                customer_address: order.delivery.address,
+                customer_postal: order.delivery.postalCode,
+                customer_notes: order.delivery.notes,
+
+                customer_access_key_hash:
+                    order.customerAccessKeyHash,
+
+                items: order.items,
+
+                total: order.total,
+                amount_ngn: order.amountNgn,
+                delivery_fee: order.deliveryFee,
+
+                created_at: order.createdAt,
+                expires_at: order.expiresAt,
+
+                payment_sent_at:
+                    order.paymentSubmittedAt || null,
+
+                approved_at:
+                    order.approvedAt || null,
+
+                approval_email_sent_at:
+                    order.approvalEmailSentAt || null
+            }, {
+                onConflict: "order_number"
+            });
+
+        if (error) {
+            throw error;
+        }
+    }
 }
 
 function hashCustomerAccessKey(accessKey) {
@@ -61,7 +172,7 @@ async function sendAndRecordApprovalEmail(orders, order) {
 
         order.approvalEmailSentAt = new Date().toISOString();
 
-        writeOrders(orders);
+    await writeOrders(orders);
 
         return {
             sent: true,
@@ -349,7 +460,7 @@ app.put("/products/:id", function(req, res) {
 
 });
 
-app.post("/orders", function(req, res) {
+app.post("/orders", async function(req, res) {
 
     try {
         let body = req.body;
@@ -425,9 +536,9 @@ app.post("/orders", function(req, res) {
             expiresAt: expiresAt.toISOString()
         };
 
-        let orders = readOrders();
-        orders.unshift(order);
-        writeOrders(orders);
+       let orders = await readOrders();
+orders.unshift(order);
+await writeOrders(orders);
 
         res.status(201).json({ success: true, order: publicOrder(order) });
     } catch (error) {
@@ -440,10 +551,10 @@ app.post("/orders", function(req, res) {
 
 });
 
-app.get("/orders", function(req, res) {
+app.get("/orders", async function(req, res) {
 
     try {
-        let orders = readOrders();
+        let orders = await readOrders();
 
         let changed = false;
         orders.forEach(function(order) {
@@ -456,7 +567,7 @@ app.get("/orders", function(req, res) {
             }
         });
         if (changed) {
-            writeOrders(orders);
+            await writeOrders(orders);
         }
 
         if (req.query.email) {
@@ -485,10 +596,10 @@ app.get("/orders", function(req, res) {
 
 });
 
-app.post("/orders/:orderNumber/payment-sent", function(req, res) {
+app.post("/orders/:orderNumber/payment-sent", async function(req, res) {
 
     try {
-        let orders = readOrders();
+        let orders = await readOrders();
         let order = orders.find(function(item) {
             return item.orderNumber === req.params.orderNumber;
         });
@@ -500,7 +611,7 @@ app.post("/orders/:orderNumber/payment-sent", function(req, res) {
 
         if (order.status === "Awaiting payment" && Date.now() >= Date.parse(order.expiresAt)) {
             order.status = "Expired";
-            writeOrders(orders);
+            await writeOrders(orders);
             return res.status(410).json({ success: false, message: "The payment window has expired." });
         }
 
@@ -510,7 +621,7 @@ app.post("/orders/:orderNumber/payment-sent", function(req, res) {
 
         order.status = "Pending approval";
         order.paymentSubmittedAt = new Date().toISOString();
-        writeOrders(orders);
+       await writeOrders(orders);
         res.json({ success: true, order: publicOrder(order) });
     } catch (error) {
         console.error("PAYMENT SUBMISSION ERROR:", error);
@@ -526,7 +637,7 @@ app.post("/orders/:orderNumber/approve", async function(req, res) {
     }
 
     try {
-        let orders = readOrders();
+        let orders = await readOrders();
         let order = orders.find(function(item) {
             return item.orderNumber === req.params.orderNumber;
         });
@@ -541,7 +652,7 @@ app.post("/orders/:orderNumber/approve", async function(req, res) {
         order.status = "Approved";
         order.paymentStatus = "Approved";
         order.approvedAt = new Date().toISOString();
-        writeOrders(orders);
+        await writeOrders(orders);
         let emailResult = await sendAndRecordApprovalEmail(orders, order);
         res.json({
             success: true,
@@ -565,7 +676,7 @@ app.post("/orders/:orderNumber/approval-email", async function(req, res) {
     }
 
     try {
-        let orders = readOrders();
+        let orders = await readOrders();
         let order = orders.find(function(item) {
             return item.orderNumber === req.params.orderNumber;
         });
