@@ -593,7 +593,7 @@ app.post("/orders/:orderNumber/approval-email", async function(req, res) {
 
 });
 
-app.post(
+app.get(
     "/test",
     function(req, res) {
         res.json({
