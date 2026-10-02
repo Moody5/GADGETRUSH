@@ -1,24 +1,25 @@
 {
+    "version": 2,
     "rewrites": [
         {
             "source": "/test",
-            "destination": "/api/test"
-        },
-        {
-            "source": "/orders",
-            "destination": "/api/orders"
+            "destination": "/api/index"
         },
         {
             "source": "/orders/:path*",
-            "destination": "/api/orders/:path*"
+            "destination": "/api/index"
         },
         {
-            "source": "/products",
-            "destination": "/api/products"
+            "source": "/orders",
+            "destination": "/api/index"
         },
         {
             "source": "/products/:path*",
-            "destination": "/api/products/:path*"
+            "destination": "/api/index"
+        },
+        {
+            "source": "/products",
+            "destination": "/api/index"
         }
     ]
 }
