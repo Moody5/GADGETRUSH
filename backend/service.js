@@ -603,13 +603,18 @@ app.post(
     }
 );
 
-let port = Number(process.env.PORT) || 3000;
+if (require.main === module) {
 
-app.listen(port, function() {
+    let port = Number(process.env.PORT) || 3000;
 
-    console.log(
-        "GadgetRush backend running on port " + port
-    );
+    app.listen(port, function() {
 
-});
+        console.log(
+            "GadgetRush backend running on port " + port
+        );
 
+    });
+
+}
+
+module.exports = app;

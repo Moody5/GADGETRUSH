@@ -1,0 +1,24 @@
+{
+    "rewrites": [
+        {
+            "source": "/test",
+            "destination": "/api/test"
+        },
+        {
+            "source": "/orders",
+            "destination": "/api/orders"
+        },
+        {
+            "source": "/orders/:path*",
+            "destination": "/api/orders/:path*"
+        },
+        {
+            "source": "/products",
+            "destination": "/api/products"
+        },
+        {
+            "source": "/products/:path*",
+            "destination": "/api/products/:path*"
+        }
+    ]
+}
